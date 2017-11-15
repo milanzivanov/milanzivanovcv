@@ -1,5 +1,4 @@
 console.log('This is the Main.js file. It should be the 3rd and final file');
-
 // modal
 let modal = document.getElementById("simpleModal");
 let modalBtn = document.getElementById("modalBtn");
@@ -26,3 +25,8 @@ function clickOutside(e) {
         modal.style.display = "none";
     }
 }
+
+// particlesjs
+particlesJS.load('particles-js', '../js/particlesjs.json', function() {
+    console.log('Particles.js working!!!');
+});

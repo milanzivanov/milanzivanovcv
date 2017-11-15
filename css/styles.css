@@ -7,7 +7,7 @@ p {
 .modal {
   display: none;
   position: fixed;
-  z-index: 7;
+  z-index: 11;
   left: 0;
   top: 0;
   width: 100%;
@@ -2200,20 +2200,29 @@ section {
   -webkit-justify-content: center;
   justify-content: center; }
 
-section#s1, section#s5, section#s2 {
+section.s1, section.s4, section.s2 {
   min-height: 100vh; }
 
-section#s1 {
+#particles-js {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 7; }
+
+section.s1 {
   background-image: url("../images/bg.jpeg");
   background-attachment: inherit;
   background-position: center center;
   background-size: cover;
   position: relative; }
-  section#s1:after {
+  section.s1:after {
     z-index: 3;
     position: absolute;
     content: "";
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     top: 0;
     left: 0;
     bottom: 0;
@@ -2233,7 +2242,7 @@ h1 {
   cursor: pointer;
   transition: 0.3s all ease-out;
   position: relative;
-  z-index: 5;
+  z-index: 10;
   animation-name: pulse;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
@@ -2284,7 +2293,7 @@ i.fa {
   text-decoration: none;
   display: inline-block; }
 
-section#s3 {
+section.s3 {
   padding: 25vh 0; }
 
 img {
@@ -2333,5 +2342,7 @@ a {
     font-size: 1rem; }
   h1 {
     font-size: 2rem; }
+  img:hover {
+    animation: none; }
   h2 {
     font-size: 1rem; } }

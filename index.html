@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <section id="s1">
+
+  <section class="s1">
     <div class="container">
       <h1 title="Click me" 
           class="center" 
@@ -23,7 +24,7 @@
     </div>
   </section>
 
-  <section id="s2">
+  <section class="s2">
     <div class="container">
       <p>
           Regards,
@@ -61,9 +62,7 @@
           <br>
           <a href="http://93.87.74.50:8283/loyalty_b2c/fictivo/login.aspx">Kasica Brojalica(portal no longer exists at that address)</a>
           <br>
-          I also did some graphic design (creation of Omega cards).
-          <br>
-          Note: I do not have access to passwords since a significant amount of time has passed.    
+          I also did some graphic design (creation of Omega cards).   
       </p>
       <p>
           HTEC here i worked on verso enterprise aplication.
@@ -91,20 +90,20 @@
     </div>
   </section>
 
-  <section id="s3">
+  <section class="s3">
     <div class="center nounderline mobile">
-      <a href="http://www.omaadriatic.com/" 
-         target="_blank"
-         title="Oma-Adriatic">
-          <img src="images/oma-adriatic.png" 
-               alt="oma-adriatic">
-      </a>
       <a href="https://www.vegaitsourcing.rs/" 
-         target="_blank" 
-         title="Vega It Sourcing">
-          <img src="images/vegait.jpg" 
-               alt="vega it sourcing" />
-      </a>
+      target="_blank" 
+      title="Vega It Sourcing">
+      <img src="images/vegait.jpg" 
+      alt="vega it sourcing" />
+    </a>
+    <a href="http://www.omaadriatic.com/" 
+       target="_blank"
+       title="Oma-Adriatic">
+        <img src="images/oma-adriatic.png" 
+             alt="oma-adriatic">
+    </a>
       <a href="https://htecgroup.com/" 
          target="_blank" 
          title="Htec Group">
@@ -114,7 +113,7 @@
     </div>
   </section>
 
-  <section id="s5">
+  <section class="s4">
     <div class="container">
       <p class="center small">
         <span class="name">Milan Živanov</span>
@@ -151,6 +150,7 @@
       </p>
     </div>
   </section>
+
   <!-- modal -->
   <div id="simpleModal" 
        class="modal">
@@ -160,7 +160,11 @@
                alt="my picture">
       </div>
   </div>
+
+  <!-- particlesjs -->
+  <div id="particles-js"></div>
   <!--build:js js/main.min.js -->
+  <script src="./js/lib/particlesjs.js"></script>
   <script src="js/main.js"></script>
   <!-- endbuild -->
 </body>
